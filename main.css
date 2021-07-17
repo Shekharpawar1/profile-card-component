@@ -1,69 +1,269 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
 
 
-body{
+
+body {
     margin: 0;
-   /* background: white; */
-     background-color: hsl(185, 75%, 39%); 
-    font-family: "Kumbh Sans";
-    
-    
+    padding: 0;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 100;
 }
 
-#card{
-    position: relative;
+#main {
+    background-color: hsl(187, 87%, 37%);
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
     background-color: #eaeaea;
-    width: 22.8%;
-    height: 50vh;
-    top: 10rem;
-    left:38rem;
-    border-radius: 1rem 1rem 1rem 1rem;
-}
-svg{
+    width: 72.2%;
+    height: 55vh;
     position: absolute;
-    left: rem;
-    border-radius: 1rem 1rem 0rem 0rem;
-   
+    /* top:25rem; */
+    border-radius: 1rem;
+    z-index: 1;
 }
-img{
-    border-radius: 100%;
-    position: relative;
-    top: 5rem;
-    border:.35em solid #eaeaea;
-    left: 7.5rem;
-    margin-bottom: 0;
-}
-#card-title{
-    margin-top: 0;
-    position: relative;
+.card {
+    position: absolute;
+    top: 5.5rem;
     left: 7rem;
-    padding-top: 0;
-    padding-left: .4px;
-    top: 4.8rem;
 }
-.info{
-    text-align: center;
-    display: flex ;
-}
-.place{
-    position: relative;
-    left:2rem
-}
-.london{
-    position: absolute;
 
-    margin: 0px;
+.info {
+    position: absolute;
+    top: 12rem;
+    text-align: center;
+    left: 5.5rem;
 }
-h4{
-    background: #2229;
-    -webkit-background-clip:text;
+
+.name-age {
+    display: flex;
+
+    flex-direction: row;
+    padding: 8px
+}
+
+.age {
+    margin-left: 5px;
+
+    background-color: hsl(0, 0%, 59%);
+    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-hr{
+
+.place {
+    position: absolute;
+    top: 2.5rem;
+    left: 2.5rem;
+    background-color: hsl(0, 0%, 59%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+#top {
+    border-radius: 1rem 1rem 0rem 0rem;
+}
+.pic {
+    border-radius: 100%;
+    border: .2em solid #eaeaea;
+}
+
+hr {
+
     position: relative;
-    right: 7rem;
-    top:1.4rem;
-    color: #333;
-    opacity: 0.5;
+    bottom: -9rem;
+    opacity: .5;
+}
+
+.first-element {
+    position: absolute;
+    top: 19rem;
+    left: 3rem;
+    padding-bottom: 1px;
+}
+
+.second-element {
+    position: absolute;
+    top: 19rem;
+    left: 9.5rem;
+    padding-bottom: 1px;
+}
+
+.third-element {
+    position: absolute;
+    top: 19rem;
+    left: 15.5rem;
+    padding-bottom: 1px;
+
+}
+.top-bg {
+    position: absolute;
+    bottom: 15rem;
+    left: -45rem;
+}
+
+.bottom-bg {
+    position: absolute;
+    top: 20rem;
+    left:15rem;
+    z-index: ;
+}
+
+h4 {
+    position: absolute;
+    top: 2rem;
+    left: -1.5rem;
+    color: hsl(0, 0%, 59%)
+}
+
+.second-element>h4 {
+    position: absolute;
+    top: 2rem;
+    left: .5rem;
+
+}
+
+.third-element>h4 {
+
+    position: absolute;
+    top: 2rem;
+    left: -.2rem;
+}
+
+
+@media (min-width:700px) {
+
+
+    #main {
+        background-color: hsl(187, 87%, 37%);
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .content {
+        background-color: #eaeaea;
+        width: 23%;
+        height: 55vh;
+        position: relative;
+        border-radius: 1rem;
+        z-index: 1;
+    }
+
+    .card {
+        position: absolute;
+        top: 5.5rem;
+        left: 7rem;
+    }
+
+    .info {
+        position: absolute;
+        top: 12rem;
+        text-align: center;
+        left: 5.5rem;
+    }
+
+    .name-age {
+        display: flex;
+
+        flex-direction: row;
+        padding: 8px
+    }
+
+    .age {
+        margin-left: 5px;
+
+        background-color: hsl(0, 0%, 59%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .place {
+        position: absolute;
+        top: 2.5rem;
+        left: 2.5rem;
+        background-color: hsl(0, 0%, 59%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+    }
+
+    #top {
+        border-radius: 1rem 1rem 0rem 0rem;
+    }
+
+    .pic {
+        border-radius: 100%;
+        border: .2em solid #eaeaea;
+    }
+
+    hr {
+
+        position: relative;
+        bottom: -9rem;
+        opacity: .5;
+    }
+
+    .first-element {
+        position: absolute;
+        top: 19rem;
+        left: 3rem;
+        padding-bottom: 1px;
+    }
+
+    .second-element {
+        position: absolute;
+        top: 19rem;
+        left: 9.5rem;
+        padding-bottom: 1px;
+    }
+
+    .third-element {
+        position: absolute;
+        top: 19rem;
+        left: 15.5rem;
+        padding-bottom: 1px;
+
+    }
+
+    .top-bg {
+        position: absolute;
+        bottom: 15rem;
+        left: -15rem;
+    }
+
+    .bottom-bg {
+        position: absolute;
+        top: 20rem;
+        left: 50rem;
+    }
+
+    h4 {
+        position: absolute;
+        top: 2rem;
+        left: -1.5rem;
+        color: hsl(0, 0%, 59%)
+    }
+
+    .second-element>h4 {
+        position: absolute;
+        top: 2rem;
+        left: .5rem;
+
+    }
+
+    .third-element>h4 {
+
+        position: absolute;
+        top: 2rem;
+        left: -.2rem;
+    }
+
 }
