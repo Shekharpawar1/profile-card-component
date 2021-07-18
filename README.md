@@ -23,16 +23,16 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 
 ### Screenshot
 
-desktop view- https://github.com/Shekharpawar1/profile-card-component/blob/main/desktop%20view.PNG
+desktop view- https://github.com/Shekharpawar1/profile-card-component/blob/main/desktop_view.PNG
 
-mobile.view - https://github.com/Shekharpawar1/profile-card-component/blob/main/mobile-view.png
+mobile.view - https://github.com/Shekharpawar1/profile-card-component/blob/main/mobile_view.png
 
 
 
 ### Links
 
 - Solution URL: https://github.com/Shekharpawar1/profile-card-component
-- Live Site URL: https://relaxed-jang-35841c.netlify.app
+- Live Site URL: https://wonderful-roentgen-60e346.netlify.app/
 
 ## My process
 
