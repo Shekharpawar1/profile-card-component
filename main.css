@@ -8,7 +8,7 @@
 
 body {
     background-color: hsl(185, 75%, 39%);
-    
+    width: 50%;
  
 
 }
@@ -16,7 +16,8 @@ body {
 main {
     position: absolute;
     margin:0rem  10rem 0rem 0rem;
-    width: 50%;
+    
+    background-color: hsl(185, 75%, 39%);
     font-family: 'Kumbh Sans', sans-serif;
     display: flex;
 }
@@ -25,7 +26,7 @@ main {
 
 .content {
     background: #eaeaea;
-    max-height: 54vh;
+    max-height: 55vh;
     position: relative;
     top: 10rem;
     right:20rem;
