@@ -1,269 +1,129 @@
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
 
-
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 
 body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Kumbh Sans', sans-serif;
-    font-size: 18px;
-    font-weight: 100;
+    background-color: hsl(185, 75%, 39%);
+
+
+
 }
 
-#main {
-    background-color: hsl(187, 87%, 37%);
+main {
     width: 100%;
-    min-height: 100vh;
+    font-family: 'Kumbh Sans', sans-serif;
     display: flex;
-    align-items: center;
-    justify-content: center;
 }
+
+/* for the mobile view width and height :375px *667 */
 
 .content {
-    background-color: #eaeaea;
-    width: 72.2%;
-    height: 55vh;
-    position: absolute;
-    /* top:25rem; */
+    background: #eaeaea;
+    max-height: 65vh;
+    position: relative;
+    top: 10rem;
     border-radius: 1rem;
     z-index: 1;
 }
-.card {
-    position: absolute;
-    top: 5.5rem;
-    left: 7rem;
-}
 
-.info {
-    position: absolute;
-    top: 12rem;
-    text-align: center;
-    left: 5.5rem;
-}
-
-.name-age {
-    display: flex;
-
-    flex-direction: row;
-    padding: 8px
-}
-
-.age {
-    margin-left: 5px;
-
-    background-color: hsl(0, 0%, 59%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.place {
-    position: absolute;
-    top: 2.5rem;
-    left: 2.5rem;
-    background-color: hsl(0, 0%, 59%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-
-}
 
 #top {
     border-radius: 1rem 1rem 0rem 0rem;
 }
+
+
 .pic {
-    border-radius: 100%;
-    border: .2em solid #eaeaea;
-}
-
-hr {
-
     position: relative;
-    bottom: -9rem;
-    opacity: .5;
+    top: -3.5rem;
+    right: -8rem;
+    border: .2em solid #eaeaea;
+    border-radius: 100%;
 }
 
-.first-element {
-    position: absolute;
-    top: 19rem;
-    left: 3rem;
-    padding-bottom: 1px;
-}
-
-.second-element {
-    position: absolute;
-    top: 19rem;
-    left: 9.5rem;
-    padding-bottom: 1px;
-}
-
-.third-element {
-    position: absolute;
-    top: 19rem;
-    left: 15.5rem;
-    padding-bottom: 1px;
-
-}
 .top-bg {
-    position: absolute;
-    bottom: 15rem;
-    left: -45rem;
+    position: relative;
+    bottom: 45rem;
+    left: 22rem;
+
 }
 
 .bottom-bg {
-    position: absolute;
-    top: 20rem;
-    left:15rem;
-    z-index: ;
+    position: relative;
+    top: 25rem;
+    right: 20rem;
+
+
 }
 
-h4 {
+
+.info {
+    position: absolute;
+    top: 13.5rem;
+    left: 8rem
+}
+
+.name-age {
+    display: flex;
+    flex-direction: row;
+}
+
+.age {
+    background: hsl(0, 0%, 59%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-left: 5px;
+}
+
+.place {
+    background: #333;
     position: absolute;
     top: 2rem;
-    left: -1.5rem;
-    color: hsl(0, 0%, 59%)
+    left: 1.5rem;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
-.second-element>h4 {
-    position: absolute;
-    top: 2rem;
-    left: .5rem;
+hr {
+    position: relative;
+    bottom: -3rem;
+    opacity: .4;
+}
+
+.stats {
+    display: flex;
+    flex-direction: row;
+
 
 }
 
-.third-element>h4 {
+.first-element {
+    position: relative;
+    top: 5rem;
+    left: 2rem;
+    /* color: hsl(0, 0%, 59%);*/
+} 
 
-    position: absolute;
-    top: 2rem;
-    left: -.2rem;
+.second-element {
+    position: relative;
+    top: 5rem;
+    left: 5rem;
+    /* color: hsl(0, 0%, 59%); */
 }
 
+.third-element {
+    position: relative;
+    top: 5rem;
+    left: 8rem;
+    /* color: hsl(0, 0%, 59%); */
+}
 
-@media (min-width:700px) {
-
-
-    #main {
-        background-color: hsl(187, 87%, 37%);
-        min-height: 100vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .content {
-        background-color: #eaeaea;
-        width: 28%;
-        height: 60vh;
-        position: relative;
-        border-radius: 1rem;
-        z-index: 1;
-    }
-
-    .card {
-        position: absolute;
-        top: 5.5rem;
-        left: 7rem;
-    }
-
-    .info {
-        position: absolute;
-        top: 12rem;
-        text-align: center;
-        left: 5.5rem;
-    }
-
-    .name-age {
-        display: flex;
-
-        flex-direction: row;
-        padding: 8px
-    }
-
-    .age {
-        margin-left: 5px;
-
-        background-color: hsl(0, 0%, 59%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-
-    .place {
-        position: absolute;
-        top: 2.5rem;
-        left: 2.5rem;
-        background-color: hsl(0, 0%, 59%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-
-    }
-
-    #top {
-        border-radius: 1rem 1rem 0rem 0rem;
-    }
-
-    .pic {
-        border-radius: 100%;
-        border: .2em solid #eaeaea;
-    }
-
-    hr {
-
-        position: relative;
-        bottom: -9rem;
-        opacity: .5;
-    }
-
-    .first-element {
-        position: absolute;
-        top: 19rem;
-        left: 3rem;
-        padding-bottom: 1px;
-    }
-
-    .second-element {
-        position: absolute;
-        top: 19rem;
-        left: 9.5rem;
-        padding-bottom: 1px;
-    }
-
-    .third-element {
-        position: absolute;
-        top: 19rem;
-        left: 15.5rem;
-        padding-bottom: 1px;
-
-    }
-
-    .top-bg {
-        position: absolute;
-        bottom: 15rem;
-        left: -15rem;
-    }
-
-    .bottom-bg {
-        position: absolute;
-        top: 20rem;
-        left: 50rem;
-    }
-
-    h4 {
-        position: absolute;
-        top: 2rem;
-        left: -1.5rem;
-        color: hsl(0, 0%, 59%)
-    }
-
-    .second-element>h4 {
-        position: absolute;
-        top: 2rem;
-        left: .5rem;
-
-    }
-
-    .third-element>h4 {
-
-        position: absolute;
-        top: 2rem;
-        left: -.2rem;
-    }
+.first-element > h4 , .second-element > h4, .third-element > h4{
+   background-color:hsl(0, 0%, 59%) ;
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
 
 }
