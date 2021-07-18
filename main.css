@@ -8,12 +8,14 @@
 
 body {
     background-color: hsl(185, 75%, 39%);
-
-
+    
+ 
 
 }
 
 main {
+    position: absolute;
+    margin:0rem  10rem 0rem 0rem
     width: 50%;
     font-family: 'Kumbh Sans', sans-serif;
     display: flex;
@@ -26,6 +28,7 @@ main {
     max-height: 65vh;
     position: relative;
     top: 10rem;
+    right:20rem;
     border-radius: 1rem;
     z-index: 1;
 }
@@ -47,14 +50,14 @@ main {
 .top-bg {
     position: relative;
     bottom: 45rem;
-    left: 22rem;
+    right: -1rem;
 
 }
 
 .bottom-bg {
     position: relative;
     top: 25rem;
-    right: 20rem;
+    right:35rem;
 
 
 }
