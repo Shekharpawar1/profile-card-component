@@ -15,7 +15,7 @@ body {
 
 main {
     position: absolute;
-    margin:0rem  10rem 0rem 0rem
+    margin:0rem  10rem 0rem 0rem;
     width: 50%;
     font-family: 'Kumbh Sans', sans-serif;
     display: flex;
